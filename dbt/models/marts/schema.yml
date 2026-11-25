@@ -1,0 +1,11 @@
+version: 2
+models:
+  - name: fct_daily_revenue
+    description: Total order revenue per day. Grain is one row per revenue_date.
+    columns:
+      - name: revenue_date
+        description: Day the order was last updated (truncated to day).
+        tests: [unique, not_null]
+      - name: revenue
+        description: Sum of order amounts for the day.
+        tests: [not_null]

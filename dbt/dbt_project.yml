@@ -1,0 +1,9 @@
+name: llm_assisted_project
+version: "1.0.0"
+profile: llm_assisted_project
+model-paths: ["models"]
+test-paths: ["tests"]
+models:
+  llm_assisted_project:
+    staging: {+materialized: view}
+    marts: {+materialized: table}
