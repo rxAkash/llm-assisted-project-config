@@ -1,0 +1,1 @@
+Review the current git diff as a senior engineer. Check: correctness, idempotency of pipelines, missing tests, SQL performance, secrets, and CLAUDE.md rule violations. Output findings grouped by severity.
